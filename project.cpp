@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+struct Booking {
+    string namaGuest;
+    string tanggal;
+    string idKamar;
+    string tipeKamar;
+    int durasi;
+    float totalHarga;
+    bool aktif;
+};
+
 class Kamar {
 protected:
     string idKamar;
@@ -57,7 +67,6 @@ public:
     }
 };
 
-// ===================== STANDAR =====================
 class Standar : public Kamar {
 public:
     Standar(string id, string nomor, float hpMalam, string fas[]) {
@@ -85,7 +94,6 @@ public:
     }
 };
 
-// ===================== DELUXE =====================
 class Deluxe : public Kamar {
 public:
     Deluxe(string id, string nomor, float hpMalam, string fas[]) {
@@ -113,7 +121,6 @@ public:
     }
 };
 
-// ===================== EXECUTIVE =====================
 class Executive : public Kamar {
 public:
     Executive(string id, string nomor, float hpMalam, string fas[]) {
@@ -141,7 +148,6 @@ public:
     }
 };
 
-// ===================== VIP =====================
 class Vip : public Kamar {
 public:
     Vip(string id, string nomor, float hpMalam, string fas[]) {
@@ -169,7 +175,6 @@ public:
     }
 };
 
-// ===================== PREMIUM =====================
 class Premium : public Kamar {
 public:
     Premium(string id, string nomor, float hpMalam, string fas[]) {
