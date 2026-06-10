@@ -34,7 +34,7 @@ virtual void tampilInfo() = 0 dan virtual void hitungTotal() = 0 menjadikan Kama
 
 - Array
 
-string fasilitas[15] — array statis di dalam class
+string fasilitas[15] array statis di dalam class
 
 - Tipe Data & Variable
 
